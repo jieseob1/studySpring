@@ -1,0 +1,27 @@
+package service;
+
+import com.basic.springbasic.domain.Grade;
+import com.basic.springbasic.domain.Member;
+import com.basic.springbasic.service.MemberService;
+import com.basic.springbasic.service.MemberServiceImpl;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.*;
+
+public class MemberServiceTest {
+    MemberService memberService = new MemberServiceImpl();
+
+
+    @Test
+    void join() {
+//given
+        Member member = new Member(1L, "memberA", Grade.VIP);
+//when
+        memberService.join(member);
+        Member findMember = memberService.findMember(1L);
+//then
+        assertThat(member).isEqualTo(findMember);
+    }
+
+}
