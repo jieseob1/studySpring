@@ -1,0 +1,13 @@
+
+[
+java:S1854">Remove this useless assignment to local variable "userBPrice".(àÿ·š8£İ©1
+`
+java:S1854">Remove this useless assignment to local variable "userAPrice".(â¬Ëñıÿÿÿÿ8£İ©1
+Q
+java:S1481"/Remove this unused "userAPrice" local variable.(â¬Ëñıÿÿÿÿ8‘£İ©1
+]	java:S125"<This block of commented-out lines of code should be removed.(•ñôúûÿÿÿÿ8–£İ©1
+L
+java:S1481"/Remove this unused "userBPrice" local variable.(àÿ·š8˜£İ©1
+]	java:S125"<This block of commented-out lines of code should be removed.(”¼¥îüÿÿÿÿ8â´á©1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ú‡Ûøÿÿÿÿ8š£İ©1

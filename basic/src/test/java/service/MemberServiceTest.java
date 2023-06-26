@@ -1,16 +1,22 @@
 package service;
 
-import com.basic.springbasic.domain.Grade;
-import com.basic.springbasic.domain.Member;
-import com.basic.springbasic.service.MemberService;
-import com.basic.springbasic.service.MemberServiceImpl;
-import org.assertj.core.api.Assertions;
+import com.basic.springbasic.AppConfig;
+import com.basic.springbasic.member.*;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
 
 public class MemberServiceTest {
-    MemberService memberService = new MemberServiceImpl();
+
+    private MemberRepository memberRepository;
+    @BeforeEach
+    void beforeEach() {
+        AppConfig appConfig = new AppConfig();
+        memberRepository = appConfig.memberRepository();
+
+    }
+    MemberService memberService = new MemberServiceImpl(memberRepository);
 
 
     @Test

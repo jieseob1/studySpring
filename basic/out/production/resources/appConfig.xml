@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="memberService" class="com.basic.springbasic.member.MemberServiceImpl">
+<!--        생성자를 넘겨줘야 한다.-->
+        <constructor-arg name="memberRepository" ref="memberRepository" />
+    </bean>
+
+<!--    ref="memberRepository 를 위함-->
+    <bean id="memberRepository" class="com.basic.springbasic.member.MemoryMemberRepository"/>
+
+    <bean id="orderService" class="com.basic.springbasic.order.OrderServiceImpl">
+        <constructor-arg name="memberRepository" ref="memberRepository"/>
+        <constructor-arg name="discountPolicy" ref="discountPolicy"/>
+    </bean>
+
+    <bean id="discountPolicy" class="com.basic.springbasic.discount.RateDiscountPolicy"/>
+</beans>

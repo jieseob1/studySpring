@@ -11,6 +11,7 @@ java {
 	sourceCompatibility = '17'
 }
 
+//lombok 설정 추가
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor

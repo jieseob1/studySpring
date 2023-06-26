@@ -1,2 +1,6 @@
 
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ôµ†úøÿÿÿÿ8çäşâ1
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ôµ†úøÿÿÿÿ
+f
+java:S1128"KRemove this unused import 'com.basic.springbasic.member.MemberServiceImpl'.(óò¾Òûÿÿÿÿ
+d
+java:S1128	"IRemove this unused import 'com.basic.springbasic.order.OrderServiceImpl'.(ƒÒ£Ñùÿÿÿÿ
