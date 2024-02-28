@@ -1,0 +1,11 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(‰›®üÿÿÿÿ8½Ä¼·1
+j
+java:S1128"MRemove this unused import 'com.basic.springbasic.discount.FixDiscountPolicy'.(÷€€Ø8¥ƒßÒ1
+r
+java:S1128"PRemove this unused import 'com.basic.springbasic.member.MemoryMemberRepository'.(À©ó³şÿÿÿÿ8¥ƒßÒ1
+]
+java:S1128	";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8¥ƒßÒ1
+u
+java:S1128
+"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8¥ƒßÒ1
